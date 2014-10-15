@@ -10,26 +10,25 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<style>
 			body {
-				background-image : url("bg2.jpg");
+				background-image : url("2.jpg");
 				background-repeat:no-repeat;
 			}
 		</style>
 	</head>
 	<body>
-		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-			<div class="container">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
 				<div class="navbar-header">
-					<a style="color:white;" class="navbar-brand" href="#">Romain Talleu</a>
+					<a class="navbar-brand" href="#">Romain Talleu</a>
 				</div>
 				
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="#intro">home</a></li>
-						<li class=""><a style="color:white;" href="#profile">Profile</a></li>
-						<li class=""><a style="color:white;" href="#services">Services</a></li>
-						<li class=""><a style="color:white;" href="#resume">Resume</a></li>
-						<li class=""><a style="color:white;" href="#portfolio">Portfolio</a></li>
-						<li class=""><a style="color:white;" href="#contact">Contact</a></li>
+						<li class="active"><a href="#">home</a></li>
+						<li class=""><a href="#profile">Profile</a></li>
+						<li class=""><a href="#resume">Resume</a></li>
+						<li class=""><a href="#portfolio">Portfolio</a></li>
+						<li class=""><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -37,15 +36,14 @@
 		<section id="intro" style="margin-top:300px; margin-bottom:300px;">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<h1 class="text-center" style="color:white;">Romain Talleu</h1>
-						<h3 class="text-center" style="color:white;">Blablabla</h3>
+					<div class="col-md-8 col-md-offset-2">
+						<h1 class="text-center" style="font-size: 700%;">Romain Talleu</h1>
+						<h3 class="text-center" style="font-size: 550%;">Blablabla</h3>
 					</div>
 				</div>
 			</div>
 		</section>
-		
-		<section id="profile">
+		<section id="profile" style="background-color:white;">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -94,8 +92,7 @@
 				</div>
 			</div>
 		</section>
-		
-		<section id="resume" class="section">
+		<section id="resume" class="section" style="background-color:white;">
 			
 			<div class="container">
 				
@@ -166,32 +163,59 @@
 				</div>
 			</div>
 		</section>
-		
-		<section id="profile-contact">
+		<section id="contact" class="section" style="background-color:white;">
+			
 			<div class="container">
+				
 				<div class="row">
-					<div class="col-sm-4">
-						<div class="profile-item">
-							<h3><span class="glyphicon glyphicon-envelope"></span><a href="#">&nbsp;&nbsp;&nbsp;romain.talleu@gmail.com</a></h3>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="profile-item">
-							<h3><span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;&nbsp;06 46 70 76 89</h3>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="profile-item">
-							<h3><span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;&nbsp;2 chemin des Huyottes, Provins, France</h3>
-						</div>
+					
+					<div class="col-md-12 headline wow bounceInLeft animated" style="visibility: visible; -webkit-animation: bounceInLeft;">
+						<h2>Contact Us</h2>
+						<p>Drop us a line or give us a ring. We love to hear you.</p>
 					</div>
 					
-				</div>
+					<div class="col-md-6 wow bounceInUp animated" style="visibility: visible; -webkit-animation: bounceInUp;">
+						
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+						
+						<ul class="icon-list">
+							<li><i class="fa fa-fw fa-map-marker"></i>001 Some Street, Some City, US</li>
+							<li><i class="fa fa-fw fa-phone"></i>123 4567 8910</li>
+							<li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">support@site.com</a></li>
+							<li><i class="fa fa-fw fa-globe"></i><a href="">http://www.site.com</a></li>
+						</ul>
+						
+					</div>
+					
+					<div class="col-md-6 wow bounceInRight animated" style="visibility: visible; -webkit-animation: bounceInRight;">
+						
+						<form id="contact-form" role="form">
+							
+							<div class="form-group">
+								<label class="sr-only" for="c_name">Name</label>
+								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+									</div>
+							
+							<div class="form-group">
+								<label class="sr-only" for="c_email">Email address</label>
+								<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+									</div>
+							
+							<div class="form-group">
+								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message"></textarea>
+							</div>
+							
+							<button type="submit" class="btn btn-custom-1">
+								<i class="fa fa-bullhorn icon-before"></i> Send it
+							</button>
+							
+						</form>
+					</div>
+					
+				</div><!-- .row -->
 				
-			</div>
+			</div><!-- .container -->
 			
-		</section>
-		<section id="profile">
 		</section>
 	
 		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
